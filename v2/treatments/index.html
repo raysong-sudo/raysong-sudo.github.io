@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2192964351521986');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2192964351521986&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<!-- SEO meta -->
+<meta name="description" content="Specialist-led physical therapy in NoMad, New York. Cha Physical Therapy in NoMad, New York." />
+<link rel="canonical" href="https://chaphysicaltherapy.com/v2/treatments" />
+<meta name="robots" content="index, follow" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Cha Physical Therapy" />
+<meta property="og:title" content="V2   Treatments | Cha Physical Therapy" />
+<meta property="og:description" content="Specialist-led physical therapy in NoMad, New York. Cha Physical Therapy in NoMad, New York." />
+<meta property="og:url" content="https://chaphysicaltherapy.com/v2/treatments" />
+<meta property="og:image" content="https://chaphysicaltherapy.com/static/images/landing/landing_first_frame.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="V2   Treatments | Cha Physical Therapy" />
+<meta name="twitter:description" content="Specialist-led physical therapy in NoMad, New York. Cha Physical Therapy in NoMad, New York." />
+<meta name="twitter:image" content="https://chaphysicaltherapy.com/static/images/landing/landing_first_frame.jpg" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["MedicalBusiness", "PhysicalTherapy"],
+  "name": "Cha Physical Therapy",
+  "alternateName": "Cha PT",
+  "@id": "https://chaphysicaltherapy.com/#business",
+  "url": "https://chaphysicaltherapy.com/",
+  "logo": "https://chaphysicaltherapy.com/static/images/chaLogo/chaLogo_brown.png",
+  "image": "https://chaphysicaltherapy.com/static/images/landing/landing_first_frame.jpg",
+  "telephone": "+1-212-643-9326",
+  "priceRange": "$$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "16 W 32nd St, Suite 1007",
+    "addressLocality": "New York",
+    "addressRegion": "NY",
+    "postalCode": "10001",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 40.7475,
+    "longitude": -73.9869
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": "09:00",
+    "closes": "19:00"
+  }],
+  "medicalSpecialty": "PhysicalTherapy",
+  "areaServed": [
+    {"@type": "City", "name": "New York"},
+    {"@type": "AdministrativeArea", "name": "New York County"}
+  ],
+  "availableService": [
+    {"@type": "MedicalProcedure", "name": "Schroth Method Scoliosis Treatment"},
+    {"@type": "MedicalProcedure", "name": "Pelvic Floor Physical Therapy"},
+    {"@type": "MedicalProcedure", "name": "Hypermobility and EDS Physical Therapy"},
+    {"@type": "MedicalProcedure", "name": "Manual Therapy"},
+    {"@type": "MedicalProcedure", "name": "Postural Restoration"},
+    {"@type": "MedicalProcedure", "name": "Acupuncture"},
+    {"@type": "MedicalProcedure", "name": "TMJ Therapy"},
+    {"@type": "MedicalProcedure", "name": "Pain Management"},
+    {"@type": "MedicalProcedure", "name": "Botox and Dermal Fillers"},
+    {"@type": "MedicalProcedure", "name": "Electrical Stimulation Therapy"}
+  ],
+  "sameAs": [
+    "https://www.instagram.com/chaphysicaltherapy",
+    "https://www.threads.com/@chaphysicaltherapy",
+    "https://www.tiktok.com/@chaphysicaltherapy",
+    "https://www.facebook.com/people/Cha-Physical-Therapy/"
+  ]
+}
+</script>
+<!-- /SEO meta -->
+
+<meta charset="utf-8" />
+<title>Treatments &mdash; Cha Physical Therapy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="/static/cha-design/colors_and_type.css" />
+<link rel="stylesheet" href="/static/cha-design/ive-draft.css" />
+<style>
+/* Treatment rows — always-visible description, full row is a link */
+.table-rows { list-style: none; }
+.table-rows li { display: contents; }
+
+a.table-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 28px;
+  gap: 32px;
+  padding: 28px 4px;
+  border-bottom: 1px solid rgba(30,27,24,0.1);
+  align-items: center;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: padding-left 280ms var(--ease), background 280ms var(--ease);
+}
+a.table-row:first-child { border-top: 1px solid rgba(30,27,24,0.1); }
+
+.row-left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.row-primary {
+  font-family: var(--font-serif, Georgia, serif);
+  font-size: clamp(20px, 2.2vw, 30px);
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  transition: color 280ms var(--ease);
+  line-height: 1.15;
+}
+.row-desc {
+  font-family: var(--font-sans, sans-serif);
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  transition: color 280ms var(--ease);
+}
+.row-secondary {
+  font-family: var(--font-sans, sans-serif);
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.55;
+  color: var(--ink-faint);
+  align-self: center;
+  transition: color 280ms var(--ease);
+}
+.row-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-shrink: 0;
+  opacity: 0.55;
+  transition: opacity 280ms var(--ease), transform 280ms var(--ease);
+}
+.row-arrow svg {
+  width: 14px; height: 14px;
+  stroke: var(--ink); fill: none; stroke-width: 1.5;
+  transition: stroke 280ms var(--ease);
+}
+a.table-row:hover { padding-left: 18px; background: rgba(191,161,96,0.10); }
+a.table-row:hover .row-primary { color: var(--gold); }
+a.table-row:hover .row-arrow { opacity: 1; transform: translateX(6px); }
+a.table-row:hover .row-arrow svg { stroke: var(--gold); }
+
+@media (max-width: 760px) {
+  a.table-row { grid-template-columns: 1fr 28px; gap: 12px 16px; }
+  .row-secondary { display: none; }
+  .row-arrow { grid-column: 2; grid-row: 1; align-self: center; }
+}
+</style>
+</head>
+<body>
+
+<div class="draft-badge">Preview &middot; v2</div>
+
+<nav class="nav">
+  <a href="/v2" class="nav-logo"><img src="/static/cha-design/assets/cha-wordmark.png" alt="Cha Physical Therapy" /></a>
+  <ul class="nav-links">
+    <li><a href="/v2/treatments">Treatments</a></li>
+    <li><a href="/v2/pain">Pain</a></li>
+    <li><a href="/v2/packages">Programs</a></li>
+    <li><a href="/v2/about">Team</a></li>
+    <li><a href="/v2/method">The Cha Method</a></li>
+    <li><a href="/v2/research">Evidence</a></li>
+    <li><a href="/v2/pricing">Pricing</a></li>
+    <li><a href="/v2/book" class="book-link">Book a session</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <section class="page-hero">
+    <p class="eyebrow">Treatments</p>
+    <h1>Find the program<br><em>that's right for you.</em></h1>
+    <p class="sub">Evidence-based, non-surgical, non-drug care, led by specialists. Whether you're dealing with scoliosis, pelvic pain, jaw tension, or chronic pain without a clear diagnosis, there's likely a program here designed for your situation.</p>
+  </section>
+
+  <div class="img-ph">
+    <img src="/static/images/treatments/treatments_first.jpeg" alt="Physical therapy treatments" />
+  </div>
+
+  <div class="rule"></div>
+
+  <section class="section">
+    <p class="section-label">What we treat</p>
+    <ul class="table-rows">
+      <li><a href="/v2/schroth" class="table-row">
+        <span class="row-left">
+          <span class="row-primary">Schroth Method</span>
+          <span class="row-desc">Three-dimensional scoliosis correction through breath, posture, and targeted movement. The non-surgical, evidence-based path to addressing the curve.</span>
+        </span>
+        <span class="row-secondary">Scoliosis</span>
+        <span class="row-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+      </a></li>
+      <li><a href="/v2/pelvic-floor" class="table-row">
+        <span class="row-left">
+          <span class="row-primary">Pelvic floor</span>
+          <span class="row-desc">Board-certified depth for pelvic pain, postpartum, and incontinence. The natural, non-surgical path to recovery.</span>
+        </span>
+        <span class="row-secondary">Pelvic pain, postpartum, incontinence</span>
+        <span class="row-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+      </a></li>
+      <li><a href="/v2/acupuncture" class="table-row">
+        <span class="row-left">
+          <span class="row-primary">Acupuncture</span>
+          <span class="row-desc">Real acupuncture by a licensed acupuncturist. Classical Eastern and Western, integrated with PT.</span>
+        </span>
+        <span class="row-secondary">Chronic tension, pain, nervous system</span>
+        <span class="row-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+      </a></li>
+      <li><a href="/v2/manual-therapy" class="table-row">
+        <span class="row-left">
+          <span class="row-primary">Manual therapy</span>
+          <span class="row-desc">Hands-on as the first tool, every time. Thirty minutes of focused manual work per session.</span>
+        </span>
+        <span class="row-secondary">Pain, stiffness, injury recovery</span>
+        <span class="row-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+      </a></li>
+      <li><a href="/v2/postural-restoration" class="table-row">
+        <span class="row-left">
+          <span class="row-primary">Postural restoration</span>
+          <span class="row-desc">Breath patterns and muscle asymmetry, the system that drives the posture, not the posture itself.</span>
+        </span>
+        <span class="row-secondary">Chronic pain, posture, breathing</span>
+        <span class="row-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+      </a></li>
+      <li><a href="/v2/pain-management" class="table-row">
+        <span class="row-left">
+          <span class="row-primary">Pain management</span>
+          <span class="row-desc">Chronic and acute pain treated from the pattern, not the symptom. Whole-body, every session.</span>
+        </span>
+        <span class="row-secondary">Chronic & acute pain, fibromyalgia</span>
+        <span class="row-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+      </a></li>
+      <li><a href="/v2/tmj" class="table-row">
+        <span class="row-left">
+          <span class="row-primary">TMJ care</span>
+          <span class="row-desc">DDS-level jaw expertise in a PT setting. The jaw, the bite, the neck, all in one place.</span>
+        </span>
+        <span class="row-secondary">Jaw pain, headaches, clenching</span>
+        <span class="row-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+      </a></li>
+      <li><a href="/v2/botox" class="table-row">
+        <span class="row-left">
+          <span class="row-primary">Therapeutic Botox</span>
+          <span class="row-desc">Clinical-grade Botox for jaw clenching, TMJ tension, and chronic migraine, used as an adjunct to the manual work. Anatomy-led. Aesthetic indications available on request.</span>
+        </span>
+        <span class="row-secondary">Jaw clenching, TMJ, migraine</span>
+        <span class="row-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+      </a></li>
+      <li><a href="/v2/hypermobility" class="table-row">
+        <span class="row-left">
+          <span class="row-primary">Hypermobility</span>
+          <span class="row-desc">Stability and load training for joints that move too much and hurt because of it.</span>
+        </span>
+        <span class="row-secondary">Joint instability, EDS, chronic pain</span>
+        <span class="row-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+      </a></li>
+    </ul>
+  </section>
+
+  <div class="rule"></div>
+
+  <section class="end">
+    <h2>Come in. <em>Leave different.</em></h2>
+    <div class="end-meta">
+      <div class="end-meta-col">
+        <span class="k">Address</span>
+        <span class="v">16 W 32nd St, Suite 1007</span>
+        <span class="v">NoMad, New York 10001</span>
+      </div>
+      <div class="end-meta-col">
+        <span class="k">Hours</span>
+        <span class="v">Mon&ndash;Fri</span>
+        <span class="v">9am&ndash;7pm</span>
+      </div>
+      <div class="end-meta-col">
+        <span class="k">Phone</span>
+        <span class="v">(212) 643-9326</span>
+      </div>
+    </div>
+    <a href="/v2/book" class="end-btn">
+      Book a session
+      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+  </section>
+
+</main>
+
+<footer>
+  <span class="foot-wordmark">Cha Physical Therapy</span>
+  <span class="foot-legal">&copy; 2026 &middot; NoMad, New York &middot; Privacy &middot; HIPAA</span>
+</footer>
+
+<script src="/static/cha-design/ive-animations.js"></script>
+<script src="/static/cha-design/image-adjuster.js"></script>
+<script src="/static/cha-design/help-bot.js"></script>
+</body>
+</html>

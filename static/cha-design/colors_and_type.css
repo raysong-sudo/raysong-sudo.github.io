@@ -1,0 +1,307 @@
+/* ============================================================
+   Cha Physical Therapy — Foundations
+   Colors, Type, Spacing, Radii, Shadows
+   ============================================================ */
+
+@font-face {
+  font-family: 'Marcellus';
+  src: url('fonts/Marcellus-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('fonts/Avenir-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Map Avenir Light to the 400/500 slots too so existing weight tokens resolve
+   to the same file until additional Avenir weights are licensed and dropped in. */
+@font-face {
+  font-family: 'Avenir';
+  src: url('fonts/Avenir-Light.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Avenir';
+  src: url('fonts/Avenir-Light.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* ----------------------------------------------------------
+     COLORS — warm, refined, sanctuary
+     The palette is grounded in the logo's cream/sand base, with
+     a single quiet sage accent and a warm clay secondary.
+     Avoid bright/saturated colors; everything is muted, warm,
+     and slightly desaturated to feel premium and calm.
+     ---------------------------------------------------------- */
+
+  /* Base — backgrounds */
+  --cha-cream:        #EDE6D6;  /* Logo background, primary brand surface */
+  --cha-bone:         #F5EFE2;  /* Lighter cream, panels, cards on cream */
+  --cha-paper:        #FBF8F1;  /* Almost-white, cleanest surface */
+  --cha-white:        #FFFEFA;  /* Off-white for max contrast cards */
+  --cha-sand:         #E2D9C5;  /* Mid neutral, dividers, hovered surfaces */
+  --cha-stone:        #C7BBA6;  /* Taupe, muted UI elements, borders */
+
+  /* Ink — foregrounds */
+  --cha-ink:          #231F1A;  /* Primary text, headlines, hover states */
+  --cha-ink-soft:     #3B342C;  /* Sub-heads, lede paragraphs, italic emphasis */
+  --cha-graphite:     #6B6258;  /* Body paragraphs, descriptions */
+  --cha-mist:         #968B7E;  /* Mono eyebrows, micro-labels, arrows */
+  --cha-line:         #D8CFBC;  /* Hairlines, borders on cream */
+  --cha-line-soft:    #E6DECB;  /* Faint dividers */
+
+  /* Sage — primary accent (clinical, calm, botanical) */
+  --cha-sage-900:     #2E3826;
+  --cha-sage-700:     #4A5840;
+  --cha-sage-500:     #6B7A5A;  /* Primary accent */
+  --cha-sage-300:     #9DA886;
+  --cha-sage-100:     #DDE2CF;
+
+  /* Clay — secondary accent (warmth, hospitality) */
+  --cha-clay-900:     #5C3B2A;
+  --cha-clay-700:     #8E5C42;
+  --cha-clay-500:     #B8826B;  /* Secondary accent */
+  --cha-clay-300:     #D4A98E;
+  --cha-clay-100:     #EFD9C7;
+
+  /* Bright — vivid persimmon for emphasis (use sparingly, never as body text) */
+  --cha-bright-900:   #6F2A12;
+  --cha-bright-700:   #A8401F;
+  --cha-bright-500:   #D85A33;  /* Bright accent */
+  --cha-bright-300:   #E89472;
+  --cha-bright-100:   #F5D5C5;
+
+  /* Semantic — used sparingly, low-saturation */
+  --cha-success:      #6B7A5A;  /* sage */
+  --cha-warning:      #C8923B;  /* warm amber */
+  --cha-error:        #A0463B;  /* terracotta-red, never bright */
+  --cha-info:         --cha-graphite;
+
+  /* ----------------------------------------------------------
+     SEMANTIC TOKENS — what to actually use in components
+     ---------------------------------------------------------- */
+  --bg-base:          var(--cha-cream);
+  --bg-raised:        var(--cha-bone);
+  --bg-paper:         var(--cha-paper);
+  --bg-inverse:       var(--cha-ink);
+
+  --fg:               var(--cha-ink);
+  --fg-soft:          var(--cha-ink-soft);
+  --fg-muted:         var(--cha-graphite);
+  --fg-faint:         var(--cha-mist);
+  --fg-on-dark:       var(--cha-bone);
+
+  --accent:           var(--cha-sage-500);
+  --accent-strong:    var(--cha-sage-700);
+  --accent-soft:      var(--cha-sage-100);
+
+  --warm:             var(--cha-clay-500);
+  --warm-strong:      var(--cha-clay-700);
+  --warm-soft:        var(--cha-clay-100);
+
+  --bright:           var(--cha-bright-500);
+  --bright-strong:    var(--cha-bright-700);
+  --bright-soft:      var(--cha-bright-100);
+
+  --border:           var(--cha-line);
+  --border-soft:      var(--cha-line-soft);
+  --border-strong:    var(--cha-stone);
+
+  /* ----------------------------------------------------------
+     TYPE — Marcellus (display serif) + Avenir Light (body)
+     The serif carries luxury/wellness/editorial feel; the sans
+     is a clean, neutral counterweight for UI and body copy.
+     ---------------------------------------------------------- */
+  --font-serif:       'Marcellus', 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-sans:        'Avenir', 'Avenir Next', 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  --font-mono:        ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+
+  /* Type scale — generous, editorial */
+  --fs-display:       clamp(56px, 8vw, 112px);   /* hero */
+  --fs-h1:            clamp(40px, 5vw, 72px);    /* page title */
+  --fs-h2:            clamp(32px, 3.5vw, 52px);  /* section title */
+  --fs-h3:            28px;
+  --fs-h4:            22px;
+  --fs-lede:          21px;                       /* opening paragraphs */
+  --fs-body:          17px;
+  --fs-small:         15px;
+  --fs-caption:       13px;
+  --fs-eyebrow:       12px;                       /* tracked all-caps */
+
+  /* Line heights */
+  --lh-display:       1.02;
+  --lh-heading:       1.1;
+  --lh-body:          1.6;
+  --lh-tight:         1.3;
+
+  /* Letter spacing */
+  --ls-display:       -0.02em;
+  --ls-heading:       -0.01em;
+  --ls-body:          0;
+  --ls-eyebrow:       0.22em;     /* generous tracking for the wordmark feel */
+
+  /* Weights */
+  --fw-light:         300;
+  --fw-regular:       400;
+  --fw-medium:        500;
+  --fw-semibold:      600;
+
+  /* ----------------------------------------------------------
+     SPACING — based on 4px grid, generous at large sizes
+     ---------------------------------------------------------- */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  24px;
+  --space-6:  32px;
+  --space-7:  48px;
+  --space-8:  64px;
+  --space-9:  96px;
+  --space-10: 128px;
+  --space-11: 160px;
+
+  /* ----------------------------------------------------------
+     RADII — soft, subtle. Cha is editorial more than playful;
+     never overly rounded. Pills only for actionable buttons.
+     ---------------------------------------------------------- */
+  --radius-xs:  2px;
+  --radius-sm:  4px;
+  --radius-md:  8px;
+  --radius-lg:  14px;
+  --radius-xl:  22px;
+  --radius-pill: 999px;
+
+  /* ----------------------------------------------------------
+     SHADOWS — gentle, warm-tinted. Never blue-black.
+     Cha doesn't lean on shadows — most surfaces sit flat with
+     hairline borders. Reserve elevation for floating elements.
+     ---------------------------------------------------------- */
+  --shadow-hairline: 0 0 0 1px var(--cha-line);
+  --shadow-xs:  0 1px 2px rgba(35, 31, 26, 0.04), 0 0 0 1px rgba(35, 31, 26, 0.04);
+  --shadow-sm:  0 4px 12px -4px rgba(35, 31, 26, 0.08);
+  --shadow-md:  0 12px 30px -10px rgba(35, 31, 26, 0.12);
+  --shadow-lg:  0 24px 60px -20px rgba(35, 31, 26, 0.18);
+
+  /* ----------------------------------------------------------
+     MOTION — slow, settled. Wellness/luxury moves unhurriedly.
+     ---------------------------------------------------------- */
+  --ease-out:    cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast:    180ms;
+  --dur-base:    320ms;
+  --dur-slow:    560ms;
+
+  /* Layout */
+  --maxw-prose:  64ch;
+  --maxw-text:   720px;
+  --maxw-content: 1200px;
+  --maxw-wide:   1440px;
+}
+
+/* ============================================================
+   SEMANTIC ELEMENT STYLES
+   ============================================================ */
+
+.cha-display, h1.cha-display {
+  font-family: var(--font-serif);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-display);
+  line-height: var(--lh-display);
+  letter-spacing: var(--ls-display);
+  color: var(--fg);
+}
+
+.cha-h1 {
+  font-family: var(--font-serif);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-h1);
+  line-height: var(--lh-heading);
+  letter-spacing: var(--ls-heading);
+  color: var(--fg);
+}
+
+.cha-h2 {
+  font-family: var(--font-serif);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-h2);
+  line-height: var(--lh-heading);
+  letter-spacing: var(--ls-heading);
+  color: var(--fg);
+}
+
+.cha-h3 {
+  font-family: var(--font-serif);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-h3);
+  line-height: var(--lh-tight);
+  color: var(--fg);
+}
+
+.cha-h4 {
+  font-family: var(--font-sans);
+  font-weight: var(--fw-medium);
+  font-size: var(--fs-h4);
+  line-height: var(--lh-tight);
+  color: var(--fg);
+}
+
+.cha-lede {
+  font-family: var(--font-sans);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-lede);
+  line-height: var(--lh-body);
+  color: var(--fg-soft);
+}
+
+.cha-body {
+  font-family: var(--font-sans);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--fg-muted);
+}
+
+.cha-small {
+  font-family: var(--font-sans);
+  font-size: var(--fs-small);
+  line-height: var(--lh-body);
+  color: var(--fg-muted);
+}
+
+.cha-caption {
+  font-family: var(--font-sans);
+  font-size: var(--fs-caption);
+  line-height: 1.4;
+  color: var(--fg-faint);
+}
+
+.cha-eyebrow {
+  font-family: var(--font-sans);
+  font-weight: var(--fw-medium);
+  font-size: var(--fs-eyebrow);
+  letter-spacing: var(--ls-eyebrow);
+  text-transform: uppercase;
+  color: var(--fg-muted);
+}
+
+/* Pull-quotes / serif italic accents */
+.cha-quote {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: var(--fw-regular);
+  font-size: 28px;
+  line-height: 1.35;
+  color: var(--fg-soft);
+}

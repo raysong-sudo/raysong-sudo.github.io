@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2192964351521986');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2192964351521986&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<!-- SEO meta -->
+<meta name="description" content="Specialist-led physical therapy in NoMad, New York. Cha Physical Therapy in NoMad, New York." />
+<link rel="canonical" href="https://chaphysicaltherapy.com/v2/pricing" />
+<meta name="robots" content="index, follow" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Cha Physical Therapy" />
+<meta property="og:title" content="V2   Pricing | Cha Physical Therapy" />
+<meta property="og:description" content="Specialist-led physical therapy in NoMad, New York. Cha Physical Therapy in NoMad, New York." />
+<meta property="og:url" content="https://chaphysicaltherapy.com/v2/pricing" />
+<meta property="og:image" content="https://chaphysicaltherapy.com/static/images/landing/landing_first_frame.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="V2   Pricing | Cha Physical Therapy" />
+<meta name="twitter:description" content="Specialist-led physical therapy in NoMad, New York. Cha Physical Therapy in NoMad, New York." />
+<meta name="twitter:image" content="https://chaphysicaltherapy.com/static/images/landing/landing_first_frame.jpg" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["MedicalBusiness", "PhysicalTherapy"],
+  "name": "Cha Physical Therapy",
+  "alternateName": "Cha PT",
+  "@id": "https://chaphysicaltherapy.com/#business",
+  "url": "https://chaphysicaltherapy.com/",
+  "logo": "https://chaphysicaltherapy.com/static/images/chaLogo/chaLogo_brown.png",
+  "image": "https://chaphysicaltherapy.com/static/images/landing/landing_first_frame.jpg",
+  "telephone": "+1-212-643-9326",
+  "priceRange": "$$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "16 W 32nd St, Suite 1007",
+    "addressLocality": "New York",
+    "addressRegion": "NY",
+    "postalCode": "10001",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 40.7475,
+    "longitude": -73.9869
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": "09:00",
+    "closes": "19:00"
+  }],
+  "medicalSpecialty": "PhysicalTherapy",
+  "areaServed": [
+    {"@type": "City", "name": "New York"},
+    {"@type": "AdministrativeArea", "name": "New York County"}
+  ],
+  "availableService": [
+    {"@type": "MedicalProcedure", "name": "Schroth Method Scoliosis Treatment"},
+    {"@type": "MedicalProcedure", "name": "Pelvic Floor Physical Therapy"},
+    {"@type": "MedicalProcedure", "name": "Hypermobility and EDS Physical Therapy"},
+    {"@type": "MedicalProcedure", "name": "Manual Therapy"},
+    {"@type": "MedicalProcedure", "name": "Postural Restoration"},
+    {"@type": "MedicalProcedure", "name": "Acupuncture"},
+    {"@type": "MedicalProcedure", "name": "TMJ Therapy"},
+    {"@type": "MedicalProcedure", "name": "Pain Management"},
+    {"@type": "MedicalProcedure", "name": "Botox and Dermal Fillers"},
+    {"@type": "MedicalProcedure", "name": "Electrical Stimulation Therapy"}
+  ],
+  "sameAs": [
+    "https://www.instagram.com/chaphysicaltherapy",
+    "https://www.threads.com/@chaphysicaltherapy",
+    "https://www.tiktok.com/@chaphysicaltherapy",
+    "https://www.facebook.com/people/Cha-Physical-Therapy/"
+  ]
+}
+</script>
+<!-- /SEO meta -->
+
+<meta charset="utf-8" />
+<title>Pricing &mdash; Cha Physical Therapy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="/static/cha-design/colors_and_type.css" />
+<link rel="stylesheet" href="/static/cha-design/ive-draft.css" />
+<style>
+/* Session pricing accordion */
+.pricing-list { list-style: none; padding: 0; margin: 0; }
+.pricing-item {
+  border-bottom: 1px solid rgba(30,27,24,0.1);
+}
+.pricing-item:first-child { border-top: 1px solid rgba(30,27,24,0.1); }
+.pricing-item details > summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 32px 4px;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 28px;
+  transition: padding-left 280ms var(--ease), background 280ms var(--ease);
+}
+.pricing-item details > summary::-webkit-details-marker { display: none; }
+.pricing-item details > summary:hover {
+  padding-left: 18px;
+  background: rgba(191,161,96,0.06);
+}
+.pricing-summary-left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.pricing-name-large {
+  font-family: var(--font-serif);
+  font-size: clamp(22px, 2.4vw, 32px);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  transition: color 280ms var(--ease);
+}
+.pricing-item details > summary:hover .pricing-name-large { color: var(--gold); }
+.pricing-meta {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.06em;
+  color: var(--ink-faint);
+}
+.pricing-amt-large {
+  font-family: var(--font-sans);
+  font-size: clamp(13px, 1.2vw, 16px);
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+  align-self: center;
+}
+.pricing-toggle {
+  width: 22px; height: 22px;
+  stroke: var(--ink-faint); fill: none; stroke-width: 1.4;
+  transition: transform 280ms var(--ease), stroke 280ms var(--ease);
+}
+.pricing-item details[open] > summary .pricing-toggle { transform: rotate(45deg); stroke: var(--gold); }
+.pricing-item details[open] > summary .pricing-name-large { color: var(--gold); }
+.pricing-content {
+  padding: 8px 4px 36px;
+  max-width: 64ch;
+}
+.pricing-content p {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.78;
+  color: var(--ink-mid);
+  margin-bottom: 18px;
+}
+.pricing-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.pricing-content ul li {
+  font-family: var(--font-sans);
+  font-size: 14.5px;
+  font-weight: 300;
+  line-height: 1.7;
+  color: var(--ink-mid);
+  padding: 8px 0 8px 22px;
+  position: relative;
+}
+.pricing-content ul li::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 17px;
+  width: 12px; height: 1px;
+  background: var(--gold);
+}
+
+@media (max-width: 760px) {
+  .pricing-item details > summary { grid-template-columns: 1fr auto; row-gap: 8px; }
+  .pricing-amt-large { grid-column: 1; }
+  .pricing-toggle { grid-column: 2; grid-row: 1; }
+}
+</style>
+</head>
+<body>
+
+<div class="draft-badge">Preview &middot; v2</div>
+
+<nav class="nav">
+  <a href="/v2" class="nav-logo"><img src="/static/cha-design/assets/cha-wordmark.png" alt="Cha Physical Therapy" /></a>
+  <ul class="nav-links">
+    <li><a href="/v2/treatments">Treatments</a></li>
+    <li><a href="/v2/pain">Pain</a></li>
+    <li><a href="/v2/packages">Programs</a></li>
+    <li><a href="/v2/about">Team</a></li>
+    <li><a href="/v2/method">The Cha Method</a></li>
+    <li><a href="/v2/research">Evidence</a></li>
+    <li><a href="/v2/pricing">Pricing</a></li>
+    <li><a href="/v2/book" class="book-link">Book a session</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <section class="page-hero">
+    <p class="eyebrow">Pricing</p>
+    <h1>Hands-on care, end to end.<br><em>Recovery, not maintenance.</em></h1>
+    <p class="sub">Every visit is sixty minutes with one clinician. Manual therapy fills the majority of the session because it is what tissue, joints, and the nervous system physiologically respond to. The cost reflects the depth and continuity of the work, and most patients offset a meaningful portion through PPO reimbursement, HSA, or FSA.</p>
+  </section>
+
+  <div class="img-ph">
+    <img src="/static/images/pricing/pricing_consult.png" alt="Cha Physical Therapy consultation" />
+  </div>
+
+  <div class="rule"></div>
+
+  <!-- What each visit includes -->
+  <section class="section">
+    <p class="section-label">What each visit includes</p>
+    <p class="statement">Time. Hands. A clinician focused on one thing. <em>Your recovery.</em></p>
+    <ul class="pricing-list" style="margin-top:48px;">
+      <li class="pricing-item">
+        <details>
+          <summary>
+            <div class="pricing-summary-left">
+              <span class="pricing-name-large">Initial evaluation</span>
+              <span class="pricing-meta">1 HR 30 MIN &middot; FIRST VISIT</span>
+            </div>
+            <span class="pricing-amt-large">$300</span>
+            <svg class="pricing-toggle" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+          </summary>
+          <div class="pricing-content">
+            <p>Ninety minutes to understand what is actually driving your pain. A complete clinical history, a hands-on assessment of how your tissues and joints are moving, and time to talk through what is happening and why. Treatment begins in the same session, so the recovery process starts before you leave.</p>
+            <ul>
+              <li>A full clinical history and complete movement assessment</li>
+              <li>Hands-on examination, the kind that finds the source instead of the spot</li>
+              <li>A working diagnosis, explained in language you can use</li>
+              <li>Treatment in the same visit, so progress starts immediately</li>
+              <li>A small, specific home program your body can respond to</li>
+            </ul>
+          </div>
+        </details>
+      </li>
+      <li class="pricing-item">
+        <details>
+          <summary>
+            <div class="pricing-summary-left">
+              <span class="pricing-name-large">Follow-up session</span>
+              <span class="pricing-meta">60 MIN</span>
+            </div>
+            <span class="pricing-amt-large">$250</span>
+            <svg class="pricing-toggle" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+          </summary>
+          <div class="pricing-content">
+            <p>An hour of focused, hands-on work. Manual therapy makes up most of the session because it is what tissue, joints, and the nervous system actually respond to. The home program is small, specific, and updated each visit based on what your body is showing. The goal is recovery, not maintenance.</p>
+            <ul>
+              <li>A full hour of one-on-one, hands-on care</li>
+              <li>Manual therapy and movement work that the body responds to physiologically</li>
+              <li>A home program that adapts as recovery progresses</li>
+              <li>Continuity, so the work compounds session to session</li>
+              <li>A clear arc toward resolving the pattern</li>
+            </ul>
+          </div>
+        </details>
+      </li>
+    </ul>
+  </section>
+
+  <div class="rule"></div>
+
+  <!-- Insurance -->
+  <section class="section section-centered">
+    <p class="section-label">Insurance</p>
+    <p class="statement">We accept select plans. <em>And help you use yours.</em></p>
+    <div class="two-col">
+      <p class="prose">We accept Medicare and select insurance plans directly. If you're unsure whether your plan is accepted, call before your first visit and we'll check with you.</p>
+      <p class="prose">For plans we're out-of-network with, partial reimbursement after the deductible is common for PPOs. We provide a superbill after every visit so you can submit directly to your plan.</p>
+    </div>
+  </section>
+
+  <div class="rule"></div>
+
+  <!-- FAQ -->
+  <section class="section">
+    <p class="section-label">Questions</p>
+    <ul class="faq-list">
+      <li class="faq-item">
+        <details>
+          <summary>
+            What forms of payment do you accept?
+            <svg class="faq-icon" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+          </summary>
+          <p class="faq-answer">We accept all major credit cards, HSA and FSA cards, and check. Payment is collected at the time of service.</p>
+        </details>
+      </li>
+      <li class="faq-item">
+        <details>
+          <summary>
+            How do I submit to insurance for reimbursement?
+            <svg class="faq-icon" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+          </summary>
+          <p class="faq-answer">We provide a superbill, a detailed receipt with all the codes your insurance needs, after every visit. You submit it directly to your plan. Most insurers process reimbursement within 30 to 60 days.</p>
+        </details>
+      </li>
+      <li class="faq-item">
+        <details>
+          <summary>
+            Can I use my FSA or HSA?
+            <svg class="faq-icon" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+          </summary>
+          <p class="faq-answer">Yes. Physical therapy is an eligible expense under both FSA and HSA plans. Use your card at checkout like any other payment.</p>
+        </details>
+      </li>
+    </ul>
+  </section>
+
+  <div class="rule"></div>
+
+  <!-- End CTA -->
+  <section class="end">
+    <h2>Come in. <em>Leave different.</em></h2>
+    <div class="end-meta">
+      <div class="end-meta-col">
+        <span class="k">Address</span>
+        <span class="v">16 W 32nd St, Suite 1007</span>
+        <span class="v">NoMad, New York 10001</span>
+      </div>
+      <div class="end-meta-col">
+        <span class="k">Hours</span>
+        <span class="v">Mon&ndash;Fri</span>
+        <span class="v">9am&ndash;7pm</span>
+      </div>
+      <div class="end-meta-col">
+        <span class="k">Phone</span>
+        <span class="v">(212) 643-9326</span>
+      </div>
+    </div>
+    <a href="/v2/book" class="end-btn">
+      Book a session
+      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+  </section>
+
+</main>
+
+<footer>
+  <span class="foot-wordmark">Cha Physical Therapy</span>
+  <span class="foot-legal">&copy; 2026 &middot; NoMad, New York &middot; Privacy &middot; HIPAA</span>
+</footer>
+
+<script src="/static/cha-design/ive-animations.js"></script>
+<script src="/static/cha-design/image-adjuster.js"></script>
+<script src="/static/cha-design/help-bot.js"></script>
+</body>
+</html>
