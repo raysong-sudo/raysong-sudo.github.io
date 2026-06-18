@@ -72,9 +72,49 @@
     });
   }
 
+  /* ---- Mobile nav: inject hamburger button + wire the toggle. ----
+     Runs on every page because the nav markup is the same everywhere.
+     CSS hides the button above 760px so it has no effect on desktop. */
+  function initMobileNav() {
+    var nav = document.querySelector('.nav');
+    var links = nav && nav.querySelector('.nav-links');
+    if (!nav || !links || nav.querySelector('.nav-toggle')) return;
+
+    var btn = document.createElement('button');
+    btn.className = 'nav-toggle';
+    btn.setAttribute('aria-label', 'Toggle menu');
+    btn.setAttribute('aria-expanded', 'false');
+    btn.innerHTML = '<span></span><span></span><span></span>';
+
+    nav.insertBefore(btn, links);
+
+    function setOpen(open) {
+      nav.classList.toggle('nav-open', open);
+      btn.setAttribute('aria-expanded', String(open));
+      document.body.style.overflow = open ? 'hidden' : '';
+    }
+
+    btn.addEventListener('click', function () {
+      setOpen(!nav.classList.contains('nav-open'));
+    });
+
+    links.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A') setOpen(false);
+    });
+
+    window.addEventListener('resize', function () {
+      if (window.innerWidth > 760 && nav.classList.contains('nav-open')) setOpen(false);
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && nav.classList.contains('nav-open')) setOpen(false);
+    });
+  }
+
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
+    document.addEventListener('DOMContentLoaded', function () { init(); initMobileNav(); });
   } else {
     init();
+    initMobileNav();
   }
 })();

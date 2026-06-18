@@ -678,6 +678,37 @@ main { animation: fadeUp 700ms var(--ease) 60ms both; }
   opacity: 1;
 }
 
+/* MOBILE NAV — hamburger button injected by ive-animations.js */
+.nav-toggle {
+  display: none;
+  position: relative;
+  z-index: 102;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  margin-left: auto;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.nav-toggle span {
+  display: block;
+  position: absolute;
+  left: 4px;
+  right: 4px;
+  height: 1px;
+  background: var(--ink);
+  transition: transform 280ms var(--ease-out, cubic-bezier(0.22, 1, 0.36, 1)),
+              opacity 180ms,
+              top 280ms var(--ease-out, cubic-bezier(0.22, 1, 0.36, 1));
+}
+.nav-toggle span:nth-child(1) { top: 10px; }
+.nav-toggle span:nth-child(2) { top: 16px; }
+.nav-toggle span:nth-child(3) { top: 22px; }
+.nav.nav-open .nav-toggle span:nth-child(1) { top: 16px; transform: rotate(45deg); }
+.nav.nav-open .nav-toggle span:nth-child(2) { opacity: 0; }
+.nav.nav-open .nav-toggle span:nth-child(3) { top: 16px; transform: rotate(-45deg); }
+
 /* RESPONSIVE */
 @media (max-width: 960px) {
   .nav { padding: 24px 32px; }
@@ -698,4 +729,64 @@ main { animation: fadeUp 700ms var(--ease) 60ms both; }
   .end { padding: 120px 32px 96px; }
   .end-meta { flex-wrap: wrap; gap: 40px; }
   footer { padding: 40px 32px; flex-direction: column; align-items: flex-start; gap: 16px; }
+}
+
+/* MOBILE — phone breakpoint with hamburger nav and tightened spacing */
+@media (max-width: 760px) {
+  .nav { padding: 18px 22px; }
+  .nav-toggle { display: block; }
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 32px;
+    padding: 88px 32px 48px;
+    background: rgba(244,241,236,0.98);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    transform: translateX(100%);
+    transition: transform 360ms var(--ease-out, cubic-bezier(0.22, 1, 0.36, 1));
+    z-index: 101;
+  }
+  .nav.nav-open .nav-links { transform: translateX(0); }
+  .nav-links a { font-size: 20px; letter-spacing: 0.02em; }
+  .nav-links .book-link { font-size: 20px; padding-bottom: 4px; }
+
+  .page-hero { padding: 88px 22px 56px; }
+  .split-hero-copy { padding: 72px 22px 48px; }
+  .split-hero-copy h1 { font-size: clamp(40px, 9vw, 56px); margin-bottom: 28px; }
+  .split-hero-copy .sub { font-size: 15px; margin-bottom: 36px; }
+  .split-hero-img { min-height: 280px; }
+
+  .section { padding: 64px 22px; }
+  .section.tight { padding: 44px 22px; }
+  .section.bottom-only { padding: 0 22px 64px; }
+  .section-label { font-size: 10px; margin-bottom: 32px; }
+  .statement { font-size: clamp(24px, 6.5vw, 34px); margin-bottom: 36px; }
+  .two-col { gap: 32px; }
+  .prose { font-size: 15px; line-height: 1.7; }
+
+  .tx-img { min-height: 220px; }
+  .tx-copy { padding: 44px 22px; }
+  .tx-copy h2 { font-size: clamp(28px, 7.5vw, 38px); }
+
+  .end { padding: 88px 22px 72px; }
+  .end h2 { font-size: clamp(40px, 11vw, 64px); }
+  .end-meta { gap: 28px; flex-direction: column; }
+  .end-btn { font-size: 14px; }
+
+  footer { padding: 32px 22px; }
+
+  .faq-list .faq-item summary { font-size: 16px; padding: 18px 0; }
+  .faq-answer { font-size: 14px; }
+
+  .big-list-item { padding: 24px 0; }
+  .big-list-item .item-text { font-size: 18px; }
+
+  .rule { margin: 0; }
 }
