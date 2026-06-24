@@ -532,6 +532,28 @@ footer {
   color: var(--ink-faint);
 }
 
+/* FOOT SOCIAL — icon row injected by ive-animations.js */
+.foot-social {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.foot-social li { margin: 0; padding: 0; }
+.foot-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  color: var(--ink-faint);
+  transition: color 220ms;
+}
+.foot-social a:hover { color: var(--ink); }
+.foot-social svg { width: 17px; height: 17px; display: block; }
+
 /* PAGE LOAD FADE */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(16px); }
